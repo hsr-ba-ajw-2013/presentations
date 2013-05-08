@@ -49,15 +49,50 @@
 					<section>
 						<h2>Team</h2>
 					</section>
+
 					<section>
-						<h2>"Präsentationsknigge"</h2>
-						Fragen wenn Fragen
+						<h3>Manuel Alabor</h3>
+					</section>
+					<section>
+						<h3>Alexandre Joly</h3>
+					</section>
+					<section>
+						<h3>Michael Weibel</h3>
+						<ul>
+							<li>Seit 5 Jahren Web Software Entwickler</li>
+							<li>Jetzt bei <a href="http://www.mila.com">Mila</a></li>
+							<li>JavaScript, Erlang, Python</li>
+							<li>Real-Time-Web</li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Traditionelle Webapplikationen</h2>
+					<h2>"Präsentationsknigge"</h2>
+					Fragen wenn Fragen
+				</section>
 
+
+				<section>
+					<section>
+						<h2>Traditionelle Webapplikationen</h2>
+					</section>
+
+					<section>
+						<h3>Server-Only Webapplikationen</h3>
+						<ul>
+							<li>Wenig bis keine AJAX Aufrufe</li>
+							<li>Logik eng an Frontend gebunden</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Javascript-Only Webapplikationen</h3>
+						<ul>
+							<li>Ohne JavaScript (z.B. Google) kein Content</li>
+							<li>Accessibility eingeschränkt</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -67,7 +102,7 @@
 					<section>
 						<h2>Prinzipien</h2>
 					</section>
-					
+
 				</section>
 
 				<section>
@@ -89,7 +124,8 @@
 				<section>
 					<h2>Ressourcen</h2>
 					<ul>
-						<li> url</li>
+						<li><a href="http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf">http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf</a></li>
+						<li><a href="http://github.com/hsr-ba-ajw-2013/BA">http://github.com/hsr-ba-ajw-2013/BA</a></li>
 					</ul>
 				</section>
 			</div>
@@ -119,9 +155,9 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
