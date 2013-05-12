@@ -39,6 +39,7 @@
 			<div class="slides">
 
 				<section>
+					<h5>Manuel Alabor, Alexandre Joly & Michael Weibel</h5>
 					<h1>Architekturkonzepte</h1>
 					<h2>moderner Web-Applikationen</h2>
 				</section>
@@ -46,8 +47,8 @@
 				<section>
 					<h2>&#147;Disclaimer&#148;</h2>
 					<ul>
-						<li>Präsentation wird im Anschluss per E-Mail zugestellt</li>
 						<li>Bei Fragen nicht zögern! Wir sind für Antworten hier :-)</li>
+						<li>Präsentation wird im Anschluss per E-Mail zugestellt</li>
 					</ul>
 				</section>
 
@@ -113,7 +114,7 @@
 
 				<section>
 					<section>
-						<h2>Methodik</h2>
+						<h2>Vorgehensweise</h2>
 					</section>
 					<section>
 						<h3>1. Analyse</h3>
@@ -141,46 +142,69 @@
 
 				<section>
 					<section>
-						<h2>Projektablauf</h2>
+						<h2>Projektplanung</h2>
 					</section>
 					<section>
 						<img src="images/projectplan-gantt.png" />
 					</section>
+					<section>
+						<h3>Bisher</h3>
+						<ul>
+							<li>Ausführliche Analyse der Aufgabenstellung</li>
+							<li>Dokumentation der Analysen</li>
+							<li>Projektsetup (Entwicklungsumgebungen etc.)</li>
+							<li>Umsetzung Beispielapplikation (Status: 80% fertig)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Aussicht</h3>
+						<ul>
+							<li>Fertigstellung Beispielapplikation</li>
+							<li>Erfassung & Verifizierung aller Erkenntnisse</li>
+							<li>&#147;Feinschliff&#148;</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
 					<section>
-						<h3>Produkte</h3>
+						<h2>Produkte</h2>
 					</section>
 					<section>
-						<h3>Hauptprodukt</h3>
-						<h2>Thesis</h2>
+						<h3>Thesis</h3>
 						<ul>
-							<li>Dokumentation zum Projektverlauf</li>
-							<li>Beschreibung und Analyse von:</li>
-							<ul>
-								<li>Technologien</li>
-								<li>Prinzipien & Richtlinien</li>
-							</ul>
+							<li>Hauptprodukt</li>
+							<li>Ausführliche Analysen</li>
 							<li>Aus- und Bewertung von Prinzipien & Richtlinien</li>
+							<li>Alle Erkenntnisse</li>
+							<li>Beschreibung zum Projektsetup</li>
 						</ul>
 					</section>
 					<section>
-						<h2>Beispielapplikation</h2>
+						<h3>Beispielapplikation</h3>
 						<ul>
 							<li>Exemplarische Darstellung der Prinzipien & Richtlinien</li>
-							<li>KEIN Produkt im eigentlichen Sinne</li>
-							<li>Eher: "Proof of Concept"</li>
+							<li>Dient als &#147;Proof of Concept&#148;</li>
+							<li>Darum: Kleiner Umfang & Fokus auf Thesis</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Ressourcen</h2>
+					<h2>Links</h2>
 					<ul>
-						<li><a href="http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf">http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf</a></li>
-						<li><a href="http://github.com/hsr-ba-ajw-2013/BA">http://github.com/hsr-ba-ajw-2013/BA</a></li>
+						<li><a href="http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf">Thesis (PDF)</a></li>
+						<li><a href="http://github.com/hsr-ba-ajw-2013/BA">Code Git Repository der Beispielapplikation</a></li>
+						<li><a href="http://github.com/hsr-ba-ajw-2013/">Alle Git Repositories zur BA</a></li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>Fragen & Antworten</h2>
+				</section>
+
+				<section>
+					<h3>Herzlichen Dank für Ihre Aufmerksamkeit</h3>
 				</section>
 			</div>
 
@@ -211,7 +235,7 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
