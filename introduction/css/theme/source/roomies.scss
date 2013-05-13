@@ -1,0 +1,41 @@
+/**
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Helvetica Neue', sans-serif;
+//$mainFontSize: 30px;
+$headingLineHeight: 1em;
+$headingLetterSpacing: 0;
+$headingFont: 'Verdana';
+$headingTextTransform: none;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(28,30,32,1), rgba(16,47,90,1) );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1 {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+.reveal h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
