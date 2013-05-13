@@ -25,6 +25,7 @@ $headingTextTransform: none;
 	@include radial-gradient( rgba(28,30,32,1), rgba(16,47,90,1) );
 }
 
+$linkColor: lighten(rgba(28,30,32,1), 50%);
 
 
 // Theme template ------------------------------
