@@ -1,0 +1,25 @@
+ul.tagcloud {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.tagcloud li {
+	display: inline;
+}
+
+.tagcloud .big {
+	font-size: 2em;
+	line-height: 1.5em;
+	color: #d8bfcd;
+}
+
+.tagcloud .medium {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	color: #767676;
+}
+
+.tagcloud .small {
+	font-size: 1em;
+	line-height: 1em;
+}

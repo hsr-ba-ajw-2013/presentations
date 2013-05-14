@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Kurzpräsentation - Architekturkonzepte moderner Web-Applikationen</title>
+
+		<meta f the name="description" content="Architekturkonzepte moderner Web-Applikationen">
+		<meta name="author" content="Manuel Alabor, Alexandre Joly & Michael Weibel">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/roomies.css" id="theme">
+
+		<link rel="stylesheet" href="introduction.css" id="theme">
+
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Iquery includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h5>Manuel Alabor, Alexandre Joly & Michael Weibel</h5>
+					<h1>Architekturkonzepte</h1>
+					<h2>moderner Web-Applikationen</h2>
+				</section>
+
+				<section>
+					<h2>&#147;Disclaimer&#148;</h2>
+					<ul>
+						<li>Bei Fragen nicht zögern! Wir sind für Antworten hier :-)</li>
+						<li>Präsentation wird im Anschluss per E-Mail zugestellt</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Teamportrait</h2>
+					</section>
+
+					<section>
+						<h3>Manuel Alabor</h3>
+						<ul>
+							<li>Seit 2012 iOS Software Engineer bei <a href="http://www.innotix.com">InnoTix</a></li>
+							<li>Zuvor 8 Jahre bei Credit Suisse; Web Frontends &  zOS Mainframe</li>
+							<li>Java, Objective-C, JavaScript</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Alexandre Joly</h3>
+						<ul>
+							<li>Bei <a href="http://www.futurecom.ch">Futurecom</a> als iOS Software Engineer seit 2012</li>
+							<li>7 Jahre bei <a href="http://www.buhlergroup.com">Bühler AG</a></li>
+							<li>Objective-C, .NET, JavaScript</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Michael Weibel</h3>
+						<ul>
+							<li>Seit 5 Jahren Web Software Entwickler</li>
+							<li>Jetzt bei <a href="http://www.mila.com">Mila</a></li>
+							<li>JavaScript, Erlang, Python</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Vergangenheit & Zukunft</h3>
+						<h2>Webapplikations-<br/>Architekturen</h2>
+					</section>
+
+					<section>
+						<h3>Traditionelle Webapplikationen</h3>
+						<ul>
+							<li>Wenig bis keine AJAX Aufrufe</li>
+							<li>Geschäfts-Logik eng an Rendering gebunden</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Heute & Zukunft</h3>
+						<ul>
+							<li>Web ist Client</li>
+							<li>Unobtrusive Rendering als Fallback</li>
+							<li>Code Sharing</li>
+							<li>Daten über REST-API</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Aufgabenstellung</h2>
+					</section>
+
+					<section>
+						<h3>Modul Internettechnologien</h3>
+						<h4>Heute</h4>
+						<ul>
+							<li>Hauptsächlich traditionelle Webapplikationen</li>
+							<li>Plus: JavaScript</li>
+							<ul>
+								<li>Basics</li>
+								<li>Klassische Client-Side Anwendung</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Modul Internettechnologien</h3>
+						<h4>Zukunft?</h4>
+						<ul>
+							<li>Server- & Client-Side</li>
+							<li>Bereicherung durch Architekturrichtlinien</li>
+							<li>State of the Art</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Prinzipien & Richtlinien #1</h3>
+						<ul class="tagcloud">
+							<li class="big">rest</li>
+							<li class="small">application-logic</li>
+							<li class="medium">http</li>
+							<li class="small">should-formats</li>
+							<li class="big">link</li>
+							<li class="big">non-browser</li>
+							<li class="medium">cookies</li>
+							<li class="small">session</li>
+							<li class="big">browser-controls</li>
+							<li class="small">posh</li>
+							<li class="medium">accessibility</li>
+							<li class="small">progressive enhancement</li>
+							<li class="medium">history-api</li>
+							<li class="small">auth</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Prinzipien & Richtlinien #2</h3>
+						<ul class="tagcloud">
+							<li class="big">unobtrusive-javascript</li>
+							<li class="small">no-duplication</li>
+							<li class="small">static-assets</li>
+							<li class="medium">know-structure</li>
+							<li class="big">own dog food</li>
+							<li class="small">identity & sign-up</li>
+							<li class="medium">apply the web</li>
+							<li class="big">automation</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Vorgehensweise</h2>
+						<ol>
+							<li>Analyse</li>
+							<li>Umsetzung</li>
+							<li>Verifizierung</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Produkte</h2>
+					</section>
+					<section>
+						<h3>Thesis</h3>
+						<ul>
+							<li>Hauptprodukt</li>
+							<li>Ausführliche Analysen</li>
+							<li>Aus- und Bewertung von Prinzipien & Richtlinien</li>
+							<li>Alle Erkenntnisse</li>
+							<li>Beschreibung zum Projektsetup</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Beispielapplikation</h3>
+						<ul>
+							<li>Exemplarische Darstellung der Prinzipien & Richtlinien</li>
+							<li>Dient als &#147;Proof of Concept&#148;</li>
+							<li>Darum: Kleiner Umfang & Fokus auf Thesis</li>
+						</ul>
+						<img src="slide_images/roomies.png" alt="Roomies Logo" width="250"/>
+					</section>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="http://hsr-ba-ajw-2013.github.io/BA-Dokumentation/thesis.pdf">Thesis (PDF)</a></li>
+						<li><a href="http://github.com/hsr-ba-ajw-2013/BA">Code Git Repository der Beispielapplikation</a></li>
+						<li><a href="http://github.com/hsr-ba-ajw-2013/">Alle Git Repositories zur BA</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fragen & Antworten</h2>
+				</section>
+
+				<section>
+					<h3>Herzlichen Dank für Ihre Aufmerksamkeit</h3>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
